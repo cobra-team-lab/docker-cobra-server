@@ -4,7 +4,7 @@
  */
 Configs
 {
-	"cfg/cobra.cfg"				"Campeonato ON"
+	"cfg/dodsbrasil.cfg"		"Campeonato ON"
 	"cfg/ammo_off.cfg"			"Municao Inf OFF"
 	"cfg/ammo_on.cfg"			"Municao Inf ON"
 }
