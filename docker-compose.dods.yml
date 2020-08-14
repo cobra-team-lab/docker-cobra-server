@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  dodserver:
+    image: dods:latest
+    restart: always
+    #volumes: 
+    #  - ./gameserver/dods-competitive/dod/:/home/dodsource/hlserver/dods-competitive/dod
+    ports: 
+      - 27015:27015

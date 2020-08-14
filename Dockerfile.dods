@@ -1,5 +1,4 @@
 FROM ubuntu:18.04
-MAINTAINER Max Gonzih <gonzih at gmail dot com>
 
 ENV USER dodsource
 ENV HOME /home/$USER
@@ -23,7 +22,7 @@ ENV LANGUAGE en_US.UTF-8
 
 ADD ./gameserver/dods-competitive/dods_competitive.txt $SERVER/dods_competitive.txt
 ADD ./gameserver/dods-competitive/update.sh $SERVER/update.sh
-ADD ./gameserver/dods-competitive/dod/autoexec.cfg $SERVER/dods/cfg/autoexec.cfg
+ADD ./gameserver/dods-competitive/dod/autoexec.cfg $SERVER/dods-competitive/dod/cfg/autoexec.cfg
 ADD ./gameserver/dods-competitive/dods.sh $SERVER/dods.sh
 
 RUN chown -R $USER:$USER $SERVER
@@ -37,4 +36,4 @@ EXPOSE 27015/udp
 WORKDIR /home/$USER/hlserver
 ENTRYPOINT ["./dods.sh"]
 #CMD ["-console" "-usercon" "+game_type" "0" "+game_mode" "1" "+mapgroup" "mg_active" "+map" "de_cache"]
-CMD ["-console" "+map" "dod_donner" "-autoupdate"]
+#CMD ["-console" "+map" "dod_donner"]

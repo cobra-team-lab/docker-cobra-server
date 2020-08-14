@@ -10,3 +10,8 @@ This is our contribution with the day of defeat community
 ```shell
 docker-compose -f "docker-compose.dods.yml" up -d --build . 
 ```
+
+
+
+### References
+This project is based using resources from https://github.com/Gonzih/docker-csgo-server
