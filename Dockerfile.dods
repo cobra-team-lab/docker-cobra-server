@@ -33,7 +33,11 @@ RUN curl http://media.steampowered.com/client/steamcmd_linux.tar.gz | tar -C $SE
 
 EXPOSE 27015/udp
 
+RUN mkdir --parents /home/dodsource/.steam/sdk32 && \
+    ln -s /home/dodsource/hlserver/dods-competitive/bin/steamclient.so /home/dodsource/.steam/sdk32/steamclient.so
+
+ADD ./gameserver/dods-competitive/dod /home/dodsource/hlserver/dods-competitive/dod/
+
 WORKDIR /home/$USER/hlserver
 ENTRYPOINT ["./dods.sh"]
-#CMD ["-console" "-usercon" "+game_type" "0" "+game_mode" "1" "+mapgroup" "mg_active" "+map" "de_cache"]
-#CMD ["-console" "+map" "dod_donner"]
+CMD ["-console" "+map" "dod_donner"]

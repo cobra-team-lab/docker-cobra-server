@@ -1,0 +1,28 @@
+"Ammo"
+{
+	"Weapons"
+	{
+		"thompson"	"999"
+		"mp40"		"999"
+		"c96"		"999"
+		"m1carbine"	"999"
+		"garand"	"999"
+		"k98"		"999"
+		"mp44"		"999"
+		"bar"		"999"
+		"spring"	"999"
+		"k98_scoped"	"999"
+		"30cal"		"999"
+		"mg42"		"999"
+		"bazooka"	"999"
+		"pschreck"	"999"
+		"colt"		"999"
+		"p38"		"999"
+		"frag_us"	"999"
+		"frag_ger"	"999"
+		"riflegren_us"	"999"
+		"riflegren_ger"	"999"
+		"smoke_us"	"999"
+		"smoke_ger"	"999"
+	}
+}

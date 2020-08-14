@@ -8,7 +8,9 @@ This is our contribution with the day of defeat community
 ## TLTR
 
 ```shell
-docker-compose -f "docker-compose.dods.yml" up -d --build . 
+docker build --pull --rm -f "Dockerfile.dods" -t dods:latest "."
+
+docker run --rm -d -p 27015:27015/udp dods:latest          
 ```
 
 

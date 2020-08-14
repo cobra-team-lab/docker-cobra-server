@@ -1,0 +1,7 @@
+whitelist
+{
+	materials\vgui\...    any
+	models\props\...    any
+	materials\models\props\...    any
+}
+

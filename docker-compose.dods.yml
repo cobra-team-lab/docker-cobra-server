@@ -2,8 +2,12 @@ version: '3.7'
 services:
   dodserver:
     image: dods:latest
-    restart: always
-    #volumes: 
-    #  - ./gameserver/dods-competitive/dod/:/home/dodsource/hlserver/dods-competitive/dod
+    #restart: always
+   # volumes:
+   #   - gameserver/dods-competitive/dod/:/home/dodsource/hlserver/dod
     ports: 
       - 27015:27015
+    #entrypoint: 
+    #  "./dods.sh" 
+   # command: 
+     # "-console +map dod_donner"

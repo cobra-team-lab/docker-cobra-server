@@ -1,0 +1,10 @@
+/**
+ * List config files here (relative to moddir) to have them added to the exec config menu list
+ * Left side is the filename, right side is the text to be added to the menu
+ */
+Configs
+{
+	"cfg/cobra.cfg"				"Campeonato ON"
+	"cfg/ammo_off.cfg"			"Municao Inf OFF"
+	"cfg/ammo_on.cfg"			"Municao Inf ON"
+}
