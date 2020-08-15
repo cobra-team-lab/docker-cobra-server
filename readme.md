@@ -13,7 +13,27 @@ docker build --pull --rm -f "Dockerfile.dods" -t dods:latest "."
 docker run --rm -d -p 27015:27015/udp dods:latest          
 ```
 
+## Description
 
+This is a docker container pre configured to run competitive matches
+This version uses DodsBrasil Rules.
+
+## Requirements
+- Docker
+
+
+## Install
+1. Install Docker
+
+2. Clone this reposiroty
+
+3. Run the following commands
+
+```shell
+docker build --pull --rm -f "Dockerfile.dods" -t dods:latest "."
+
+docker run --rm -d -p 27015:27015/udp dods:latest          
+```
 
 ### References
 This project is based using resources from https://github.com/Gonzih/docker-csgo-server

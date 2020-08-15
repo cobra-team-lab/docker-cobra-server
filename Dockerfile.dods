@@ -32,6 +32,8 @@ RUN curl http://media.steampowered.com/client/steamcmd_linux.tar.gz | tar -C $SE
     && $SERVER/update.sh
 
 EXPOSE 27015/udp
+EXPOSE 27020/udp
+EXPOSE 27005/udp
 
 RUN mkdir --parents /home/dodsource/.steam/sdk32 && \
     ln -s /home/dodsource/hlserver/dods-competitive/bin/steamclient.so /home/dodsource/.steam/sdk32/steamclient.so
